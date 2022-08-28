@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+:root{
+    --first-color: #09ADBB;
+    --first-color-second: #CC0000;
+    --main-color: #00b0bf;
+    --black: #222;
+    --white: #999;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, 0.7);
+    --light-bg: #eee;
+    --border: 0.1rem solid var(--black);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+
+    /* Font and Typhography */
+    --body-font: 'Worksans', sans-serif;
+    --title-font:"Sedan SC";
+
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .813rem;
+    --small--font-size: 0.9rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* Margin Bottom */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1-0: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2-: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3-: 3rem;
+}
+
+
+
+*{
+    box-sizing: smooth;
+}
+
+body{
+    margin: 0 0 3rem 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+   height: 100%;
+   width: 100%;
+   margin-bottom: var(--mb-1-5);
+
+}
+
+.section{
+    padding: 2rem 6rem 2rem 6rem;
+}
+
+.section__title{
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size);
+    color: #00b0bf;
+}
+
+.section__subtitle{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-3-);
+    text-align: center;
+}
+
+
+/* ========== LAYOUT ========== */
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
+}
+
+.grid{
+    display: grid;
+    gap: 50px;
+}
+
+.header{
+    width: 100%;
+    z-index: 100;
+}
+
+/* ========== HEADER ========== */
+.main__title{
+    font-family: "Sedan SC";
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: var(--font-medium);
+    line-height: 80%;
+    margin-left: 20px;
+    font-style: normal;
+}
+
+/* ========== NAV ========== */
+.nav{
+    display: flex;
+    height: 3rem;
+    max-width: 968px;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.nav__list{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.nav__link{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--main-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.website__description{
+    display: block;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 120px;
+    font-size: 1rem;
+}
+
+.description{
+    padding: 1rem 0 2rem;
+}
+
+/* ========== ABOUT ========== */
+
+.about{
+    background-image: url('../img/keindahan-pemandangan-di-goa-pindul\ 2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.about__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.about__content{
+    position: relative;
+    padding: 0.7rem 0.7rem 1rem 0.7rem;
+    /* width: 170px;
+    height: 110px; */
+    border-radius: .5rem;
+    background-color: white;
+    margin-left: 2rem;
+}
+
+.about__img{
+    /* display: inline-flex;
+    flex-direction: column;
+    padding: 1rem 2rem 3rem 2rem;
+    width: 170px;
+    height: 110px;
+    border-radius: .5rem;
+    background-color: white; */
+    width: 220px;
+    height: 140px;
+    border-radius: .5rem;
+}
+
+.about__title{
+    font-family:  "Sedan SC";
+    color: white;
+    font-size: 800;
+}
+
+.about__subtitle{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3-);
+    text-align: center;
+    color: white;
+}
+
+
+
